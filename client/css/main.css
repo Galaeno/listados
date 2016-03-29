@@ -1,0 +1,198 @@
+
+
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+  /*background-color: #315481;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);*/
+  background-color:#868686;
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.container{
+  max-width: 600px;
+  margin: 45px auto 20px auto;
+  min-height: 100%;
+  background: white;
+  box-shadow: 10px 10px 10px black;
+}
+
+footer{
+  width: 100%;
+  background: #3566b0;
+  box-shadow: 0px 0px 10px black;
+  text-align: center;
+  color: white;
+  padding:5px;
+  box-sizing:border-box;
+}
+
+header {
+  /*background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);*/
+  background-color:#98aad4;
+  padding: 15px;
+  position: relative;
+  z-index:0;
+  min-height: 80px;
+  padding-bottom: 0;
+  color:white;
+}
+
+#login-buttons {
+  display: block;
+  background-color: #3566b0;
+  padding: 10px 10px 10px 0px;
+  color: white;
+  text-align: right;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  box-shadow: 0 0 10px black;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+  color: white;
+  text-shadow: 2px 3px 3px black;
+}
+
+form {
+  margin-bottom: -10px;
+}
+
+.new-task input {
+  box-sizing: border-box;
+  padding: 10px;
+  background: #8493bc;
+  border: none;
+  width: 95%;
+  font-size: 1em;
+  border-radius: 5px;
+  color:white;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+  cursor:pointer;
+  color:red;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.delete:hover{
+  border: 1px solid red;
+  box-shadow:0 0 10px red;
+  transition: all 1s;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+
+li .text {
+  margin-left: 10px;
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked .text {
+  text-decoration: line-through;
+}
+
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+
+header .hide-completed {
+  float: right;
+}
+
+.toggle-private {
+  margin-left: 5px;
+}
+
+#login-dropdown-list{
+  top: 40px;
+  right: 10px;
+  left:initial;
+}
+
+.agregar{
+  color: white;
+  font-size: 2em;
+  float: right;
+  width: 3%;
+}
+
+.agregar{
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .new-task input {
+    padding-bottom: 5px;
+  }
+
+  .container {
+    margin-top: 45px;
+    box-shadow: 3px 5px 10px black;
+    width: 95%;
+  }
+
+  header .hide-completed {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+}
